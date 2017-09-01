@@ -117,7 +117,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AI7-4k-5dT" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="AI7-4k-5dT" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -186,6 +186,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nae-HH-bXg"/>
                     </view>
+                    <connections>
+                        <outlet property="collecionView" destination="HTo-Zz-MS3" id="SC5-Pm-Mp3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faY-XJ-xIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
